@@ -1,0 +1,50 @@
+/* Universal */
+
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Teko', sans-serif;
+    line-height: 1.6;
+}
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Navbar */
+
+.navbar {
+    background-color: grey;
+}
+nav {
+    margin: auto 30px;
+    max-width: 1200px;
+
+}
+
+nav ul {
+    overflow: hidden;
+    float: right;
+}
+nav li {
+    display: inline;   
+}
+nav a {
+    color: #fff;
+    text-shadow: 1px 2px 4px #222;
+    font-size: 32px;
+    margin: auto 10px;
+    
+}
+
+
+

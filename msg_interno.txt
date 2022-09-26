@@ -1,0 +1,14 @@
+Aqui podemos llevar un resumen de lo que hemos hecho, errores, tareas, etc.
+Como tambien links de favicon's usados, videos tutoriales, procesos, etc.
+-->
+Aqui les dejo el link para una biblioteca de iconos muy facil de usar 
+https://fontawesome.com/start donde pueden crear una cuenta (kit) y aplicarla en sitios web muy facilmente, 
+recuerden usar iconos gratis ) de lo contrario no se mostrara en el sitio
+la ventaja de usar este link es que no necesitas descargar imagenes y asi optimizas el sitio
+.
+Este es el link de la fuente que use de google font 'https://fonts.google.com/specimen/Teko'
+puede ser cambiada en cualquier momento
+.
+inclui: carpetas de imagenes y videos, index.html, juegos.html, login.html, 
+msg-interno.txt para comunicarnos entre nosotros y un readme.txt donde esta el tpo
+-->
