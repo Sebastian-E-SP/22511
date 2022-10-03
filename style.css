@@ -1,50 +1,227 @@
-/* Universal */
+@font-face {
+    font-family: 'Arcade';
+    src: url('ARCADE_N.TTF') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
+footer
+{
+    position: absolute;
+    bottom: 0;
+}
 
-* {
-    box-sizing: border-box;
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Arcade;
 }
 
-body {
-    font-family: 'Teko', sans-serif;
-    line-height: 1.6;
-}
-ul {
-    list-style-type: none;
+h3{
+    color: white;
+    margin-right: 12%;
 }
 
-a {
+.container {
+    max-width: 1860px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container a{
     text-decoration: none;
 }
 
-/* Navbar */
-
-.navbar {
-    background-color: grey;
-}
-nav {
-    margin: auto 30px;
-    max-width: 1200px;
-
-}
-
-nav ul {
-    overflow: hidden;
-    float: right;
-}
-nav li {
-    display: inline;   
-}
-nav a {
-    color: #fff;
-    text-shadow: 1px 2px 4px #222;
-    font-size: 32px;
-    margin: auto 10px;
-    
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    padding: 16px 32px 16px;
+    background-color: #242424;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-bottom: 3px solid grey;
 }
 
+.hamburger{
+    display: block;
+    position: relative;
+    z-index: 1;
+    user-select: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
 
+.hamburger span{
+    display:block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background-color: white;
+    border-radius: 6px;
+    transform-origin: 0 0;
+    transition: 0.3s;
+}
 
+.hamburger:hover span:nth-child(2){
+    transform: translateX(10px);
+    background-color: #ffff66;
+}
+
+.hamburger.is-active span:nth-child(1){
+    transform: translate(0px, -2px) rotate(45deg);
+}
+
+.hamburger.is-active span:nth-child(2){
+    opacity: 0;
+    transform: translateX(15px);
+}
+
+.hamburger.is-active span:nth-child(3){
+    transform: translate(-3px, 3px) rotate(-45deg);
+}
+
+.hamburger.is-active:hover span{
+    background-color: #ffff66;
+}
+
+.menu{
+    display: none;
+    flex: 1 1 0%;
+    justify-content: flex-end;
+    margin: 0 32px;
+}
+
+.menu a{
+    margin: 0 24px;
+    color:white;
+}
+
+.menu a:hover{
+    font-size: 20px;
+    transition: 0.5s;
+    color:#ffff66;
+}
+
+.menu a:active{
+    font-size: 12px;
+    transition: 0.5s;
+    color:violet;
+}
+
+@media (min-width: 768px){
+    .hamburger{
+        display: none;
+    }
+    .menu{
+        display:block;
+    }
+}
+
+.pie-pagina{
+    width: 100%;
+    background-color: #242424;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-top: 3px solid grey;
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1860px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 30px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img{
+    width: 360px;
+}
+
+.pie-pagina .grupo-1 .box h2{
+    color:#ffff66;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+.pie-pagina .grupo-1 .box p{
+    color: white;
+    font-size: 10px;
+    text-align: left;
+}
+
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 10px;
+    color: aliceblue;
+    text-align: center;
+    background-color: #2D2D2D;
+    border-radius: 20px;
+}
+
+.pie-pagina .grupo-1 .red-social a:nth-child(1):hover{
+    color: #036cfe;
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+.pie-pagina .grupo-1 .red-social a:nth-child(2):hover{
+    color: #b63bc6;
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+.pie-pagina .grupo-1 .red-social a:nth-child(3):hover{
+    color: #00e1ff;
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+.pie-pagina .grupo-1 .red-social a:nth-child(4):hover{
+    color: #ff0000;
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+.pie-pagina .grupo-2{
+    background-color: #2D2D2D;
+    padding: 15px 10px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.pie-pagina .grupo-2 small{
+    font-size: 14px;
+}
+
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
