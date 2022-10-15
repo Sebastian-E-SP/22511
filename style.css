@@ -7,7 +7,7 @@
 
 footer
 {
-    position: absolute;
+    position: relative;
     bottom: 0;
 }
 
@@ -36,7 +36,7 @@ h3{
 }
 
 nav{
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
@@ -133,6 +133,7 @@ nav{
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     border-top: 3px solid grey;
+    position:relative;
 }
 
 .pie-pagina .grupo-1{
@@ -224,4 +225,11 @@ nav{
         grid-gap: 30px;
         padding: 35px 0px;
     }
+}
+
+.main{ background-color:gray;
+position: relative;
+padding-left: 25px;
+
+
 }
