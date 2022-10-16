@@ -1,3 +1,4 @@
+/* Universal Selectors */
 @font-face {
     font-family: 'Arcade';
     src: url('ARCADE_N.TTF') format('truetype');
@@ -5,20 +6,26 @@
     font-weight: normal;
 }
 
-footer
-{
-    position: relative;
-    bottom: 0;
-}
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arcade;
+    
 }
 
-h3{
+body {
+    background-color: #242424;
+    font-family: 'Arcade';
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+ul {
+    list-style-type: none;
+}
+
+h3 {
     color: white;
     margin-right: 12%;
 }
@@ -28,12 +35,14 @@ h3{
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .container a{
     text-decoration: none;
 }
+
+  /* Navbar */
 
 nav{
     position: relative;
@@ -118,13 +127,118 @@ nav{
     color:violet;
 }
 
-@media (min-width: 768px){
-    .hamburger{
-        display: none;
-    }
-    .menu{
-        display:block;
-    }
+/* Index */
+
+.welcome {
+    position: relative;
+    color: #fff;
+    width: 100%;
+    min-height: 470px;
+    margin: auto;
+    background-color: #6b6b6b;
+}
+
+
+.welcome video {
+    position: fixed;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+}
+.title {
+    width: 50%;
+    color: #fff;
+    position: relative;
+    top: 180px;
+    left: 0;
+    font-size: 35px;
+}
+.title h1 {
+    padding: 20px;
+    margin: 20px;
+}
+.half {
+    position: absolute;
+    width: 50%;
+    height: 450px;
+    background-color: #2d2d2d85;
+    right: 0;
+    top: 0;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.half li {
+    margin: 50px;
+}
+.half a {
+    font-size: 30px;
+    transition: 0.5s ease-in-out;
+}
+.half a:hover {
+    letter-spacing: 4px;
+    color: green;
+    transition: 0.5s ease-in-out;
+}
+
+/* News */
+
+.news {
+    position: relative;
+    width: 100%;
+    min-height: max-content;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 29%, rgba(150,44,89,1) 60%, rgba(12,73,85,1) 100%);
+    text-align: center;
+    
+}
+
+
+.news h2 {
+    margin: 40px;
+    padding-top: 100px;
+}
+.news .container {
+    flex-wrap: wrap;
+}
+.news .card {
+    display: flex;
+    background-image: url(/img/arcade.png);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 420px;
+    height: 400px;
+    border-radius: 16px;
+    margin: 30px;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.card .screen {
+    background-color: rgb(0, 0, 0);
+    width: 250px;
+    height: 220px;
+}
+.card p {
+    color: green;
+    padding: 30px;
+    
+}
+
+/* Footer */
+
+footer
+{
+    display: flex;
+    position: relative;
+    bottom: 0;
+    padding-bottom: 40px;
 }
 
 .pie-pagina{
@@ -134,13 +248,18 @@ nav{
     border-top-right-radius: 15px;
     border-top: 3px solid grey;
     position:relative;
+    bottom: 0;
 }
 
 .pie-pagina .grupo-1{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
     width: 100%;
     max-width: 1860px;
     margin: auto;
-    display: grid;
+    
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
     padding: 30px 0px;
@@ -208,6 +327,10 @@ nav{
 }
 
 .pie-pagina .grupo-2{
+    z-index: 100;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
     background-color: #2D2D2D;
     padding: 15px 10px;
     text-align: center;
@@ -216,7 +339,19 @@ nav{
 
 .pie-pagina .grupo-2 small{
     font-size: 14px;
+    
 }
+
+
+
+        /* Registro*/
+
+    .main { 
+background-color:gray;
+position: relative;
+padding-left: 25px;
+}
+
 
 @media screen and (max-width:800px){
     .pie-pagina .grupo-1{
@@ -227,9 +362,11 @@ nav{
     }
 }
 
-.main{ background-color:gray;
-position: relative;
-padding-left: 25px;
-
-
+@media (min-width: 768px){
+    .hamburger{
+        display: none;
+    }
+    .menu{
+        display:block;
+    }
 }
