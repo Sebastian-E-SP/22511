@@ -62,22 +62,26 @@
         <div class="container">
             <div class="card">
                 <div class="screen">
-                 <!--<iframe width="250" height="220" src="https://www.youtube.com/embed/ozyq3PDRQsU?start=494" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->   
+                 <iframe width="250" height="220" src="https://www.youtube.com/embed/ozyq3PDRQsU?start=494" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="card">
-                <div class="screen">
-                    <div class="popup" onclick="myFunction()">START</div>
+            <div class="card" id="card">
+                <div id="popup" class="popup" onclick="myFunction()"><i class="fa-solid fa-power-off"></i></div>
                 <span id="span">
-                    <img src="/img/coin.png" alt="">
-                 </span>  
-                </div>
+                    <div class="cont">
+                <iframe id="atari" src="https://www.retrogames.cc/embed/7642-88-games.html" width="600" height="450" frameborder="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="no"></iframe>
+                    </div>
+                </span>  
+                
+                
               
 <script>
     function myFunction() {
-        var popup = document.getElementById ("span");
+        var card = document.getElementById("card");
+        var popup = document.getElementById("popup")
         span.classList.toggle("show");
-        span.classList.classList
+        card.classList.toggle("on");
+        popup.classList.toggle("off");
       }
       </script>
             </div>
