@@ -16,10 +16,10 @@
            <a href=""><h3><img class="icon" src="img/coin.png" width="22px" height="20px">Insert Coin</h3></a>
 
             <div class = "menu">
-                <a href="http://" class="is-active">Home</a>
-                <a href="http://" class="is-active">About Us</a>
-                <a href="http://" class="is-active">Register</a>
-                <a href="http://" class="is-active">Help</a>
+                <a href="index.html" class="is-active">Home</a>
+                <a href="about.html" class="is-active">About Us</a>
+                <a href="Registro.html" class="is-active">Register</a>
+                <a href="help.html" class="is-active">Help</a>
             </div>
 
             <button class="hamburger">
@@ -40,8 +40,8 @@
           <fieldset> 
            
             <p>Usuario: <input type="text" name="usuario" id="usuario"></p><br><br>
-            <p>Clave: <input type="text" name="clave" id="clave"></p><br><br>
-            <p>Confirma tu Clave: <input type="text" name="cclave" id="cclave"></p><br><br>
+            <p>Clave: <input type="password" name="clave" id="clave"></p><br><br>
+            <p>Confirma tu Clave: <input type="password" name="clave2" id="clave2"></p><br><br>
             <p>Correo Electronico: <input type="text" name="email" id="email"> <br><br>
              <input type="submit" value="Enviar">
             <input type="reset" value="Cancelar"><br><br>
@@ -66,8 +66,8 @@
                 return;
             }
            
-            var cclave = document.getElementById('cclave').value;
-            if (cclave.value === clave) {
+            var clave2 = document.getElementById('clave2').value;
+            if (clave!=clave2) {
                 alert('La clave no es igual');
                 return;
             }
@@ -78,8 +78,8 @@
             return;  
             }
             this.submit();
+        }
     
-    }
 
         </script>
 
@@ -126,6 +126,6 @@
             <small>&copy; 2022 <b>Insert Coin</b> - Todos Los Derechos Reservados</small>
         </div>
     </footer>
-    <script src="main.js"></script>
+   
 </body>
 </html>
