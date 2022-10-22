@@ -280,13 +280,14 @@ nav{
 
 
  .popup {
-    color: green;
-    background-color: black;
+    color: rgba(0, 128, 0, 0);
+    background: url(/img/konami.png);
+    background-position: center;
+    background-size: cover;
+    font-size: 50px;
     width: 260px;
     height: 200px;
-    padding: 30px;
     position: relative;
-    display: inline-block;
     cursor: pointer;
     -webkit-user-select: none;
   -moz-user-select: none;
@@ -296,14 +297,13 @@ nav{
     
 }
 .popup.off {
- padding: 0;
- width: 100%;
- background-color: rgba(0, 0, 0, 0);
+ 
+ background: none;
  position: absolute;
- height: 30px;
- bottom: 0;
+ bottom: -110px;
+ right: 270px;
  color: rgb(255, 0, 0);
-
+ text-shadow: 2px 2px 2px black;
 
    
  
