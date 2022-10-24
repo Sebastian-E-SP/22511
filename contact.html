@@ -35,21 +35,36 @@
     </nav>
 
     <!--Header-->
+    <div class="letter">
+        <div class="present">
+            <h3>Take the game to another level</h3>
+        </div>
+    <div class="contact">
+        <h3>Get in Touch</h3>
+        <div class="alert">Your message has been sent</div>
+        <form action="https://formspree.io/f/mvoywgla"
+        method="POST" id="contactForm">
+          <p>
+            <label for="name">First Name</label>
+            <input type="text" id="name" name="firstname" placeholder="Your name.." required>
+          </p>
+          <p>
+            <label for="company">Company</label>
+            <input type="text" name="company" id="company" placeholder="Your company..">
+          </p>
+          <p>
+            <label>Email Address</label>
+            <input type="email" name="email" id="email" placeholder="Your email address.." required>
+          </p>
+          <p>
+            <label>Message</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:50px"></textarea>
+
+            <button class="ctc"><input type="submit" value="Submit"></button>
+            </form>
+        </div>
+    </div>
     
-    <div id="error"></div>
-    <form action="/" method="get">
-        <div>
-            <label for="name">Name</label>
-            <input id="name" name="name" type="text" required>
-        </div>
-        <div>
-            <label for="password">password</label>
-            <input id="password" name="password" type="password">
-        </div>
-        <button type="submit">Submit</button>
-    </form>
-
-
 
     <!--Content-->
 

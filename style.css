@@ -332,6 +332,63 @@ iframe #atari {
     margin: auto;
 }
 
+/* Contact */
+
+.letter {
+    width: 100%;
+    height: min-content;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+
+.contact {
+    grid-column: 2;
+    background-color: #fff;
+    height: min-content;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    color: #2D2D2D;
+    -webkit-animation: color-change-5x 8s linear infinite alternate both;
+	        animation: color-change-5x 8s linear infinite alternate both;
+}
+.contact h3 {
+    color: #2D2D2D;
+    margin: auto;
+}
+.alert {
+    display: none;
+}
+#contactForm {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+ .contact input {
+    width: 100%;
+    margin: 10px;
+    padding: 5px;
+} 
+
+.present {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    line-height: 5;
+    font-size: 20px;
+    
+
+}
+.present h3 {
+    -webkit-animation: text-change-5x 8s linear infinite alternate both;
+	        animation: text-change-5x 8s linear infinite alternate both;
+}
 /* Footer */
 
 footer
@@ -813,3 +870,72 @@ padding-left: 25px;
 
     }
   }
+  @-webkit-keyframes color-change-5x {
+    0% {
+      background: #19dcea;
+    }
+    25% {
+      background: #b22cff;
+    }
+    50% {
+      background: #ea2222;
+    }
+    75% {
+      background: #f5be10;
+    }
+    100% {
+      background: #3bd80d;
+    }
+  }
+  @keyframes color-change-5x {
+    0% {
+      background: #19dcea;
+    }
+    25% {
+      background: #b22cff;
+    }
+    50% {
+      background: #ea2222;
+    }
+    75% {
+      background: #f5be10;
+    }
+    100% {
+      background: #3bd80d;
+    }
+  }
+  @-webkit-keyframes text-change-5x {
+    0% {
+      color: #19dcea;
+    }
+    25% {
+        color: #b22cff;
+    }
+    50% {
+        color: #ea2222;
+    }
+    75% {
+        color: #f5be10;
+    }
+    100% {
+        color: #3bd80d;
+    }
+  }
+  @keyframes text-change-5x {
+    0% {
+        color: #19dcea;
+    }
+    25% {
+        color: #b22cff;
+    }
+    50% {
+        color: #ea2222;
+    }
+    75% {
+        color: #f5be10;
+    }
+    100% {
+        color: #3bd80d;
+    }
+  }
+  
