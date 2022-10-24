@@ -5,26 +5,17 @@
     font-weight: normal;
 }
 
+@font-face {
+    font-family: 'Google';
+    src: url('ProductSans-Regular.woff') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
 *{
     box-sizing: border-box;
     font-family: Arcade;
 }
-
-html{
-    height: 100%;
-    width: 100%;
-    background-color: #242424;
-}
-
-body{
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-/* --------NAVBAR-------- */
 
 h3{
     color: white;
@@ -182,212 +173,7 @@ nav{
     border-radius: 20px;
     transform: translate(-1em,0);
     transition:1s;
-
 }
-
-/* --------ABOUT US-------- */
-.about{
-    height: 100%;
-}
-
-/*About Main 1*/
-
-.main{
-    margin: auto;
-    padding: 0px 60px 120px 0px;
-    height: 25%;
-    align-items: center;
-    justify-content: center;
-    background-image: url(https://hdwallpaperim.com/wp-content/uploads/2017/08/104598-space-pixel_art-horizon-stars.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-top-left-radius: 20px;   
-    border-top-right-radius: 20px; 
-    cursor: pointer;
-}
-
-.text{
-    width: 50%;
-    float: right;
-}
-
-.text :hover{
-    transform: translate(-3em,0);
-    transition:1s;
-}
-
-.text h5{
-    color: #ffff66;
-    font-size: 1.3em;
-    text-align: right;
-}
-
-span{
-    color: #ffff66;
-}
-
-.text p{
-    color: whitesmoke;
-    letter-spacing: 1px;
-    font-size: 0.7em;
-    text-align: right;
-}
-
-/*About Main 2*/
-
-.main2{
-    margin: auto;
-    padding: 0px 0px 0px 60px;
-    height: 25%;
-    align-items: center;
-    justify-content: left;
-    background-image: url(https://wallpapercave.com/wp/wp1933955.png);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    cursor: pointer;
-}
-
-.text2{
-    width: 50%;
-    float: left;
-    justify-content: left;
-}
-
-.text2 :hover{
-    transform: translate(3em,0);
-    transition:1s;
-}
-
-.text2 h5{
-    color: #ffff66;
-    font-size: 1.3em;
-}
-
-span{
-    color: #ffff66;
-}
-
-.text2 p{
-    color: whitesmoke;
-    letter-spacing: 1px;
-    font-size: 0.7em;
-}
-
-/*About Main 3*/
-
-.main3{
-    padding: 0px 60px 120px 0px;
-    margin: auto;
-    height: 25%;
-    align-items: center;
-    justify-content: center;
-    background-image: url(https://wallpaperaccess.com/full/2122578.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    cursor: pointer;
-}
-
-.text3{
-    width: 50%;
-    float: right;
-}
-
-.text3 :hover{
-    transform: translate(-3em,0);
-    transition:1s;
-}
-
-.text3 h5{
-    color: #ffff66;
-    font-size: 1.3em;
-    text-align: right;
-}
-
-span{
-    color: #ffff66;
-}
-
-.text3 p{
-    color: whitesmoke;
-    letter-spacing: 1px;
-    font-size: 0.7em;
-    text-align: right;
-}
-
-/*About Main 4*/
-
-.main4{
-    margin: auto;
-    padding: 0px 0px 0px 60px;
-    height: 25%;
-    align-items: center;
-    justify-content: left;
-    background-image: url(https://images.alphacoders.com/113/1138740.png);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    cursor: pointer;
-    border-bottom-left-radius: 20px;   
-    border-bottom-right-radius: 20px;
-}
-
-.text4{
-    width: 50%;
-    float: left;
-    justify-content: left;
-}
-
-.text4 :hover{
-    transform: translate(3em,0);
-    transition:1s;
-}
-
-.text4 h5{
-    color: #ffff66;
-    font-size: 1.3em;
-}
-
-span{
-    color: #ffff66;
-}
-
-.text4 p{
-    color: whitesmoke;
-    letter-spacing: 1px;
-    font-size: 0.7em;
-}
-
-@media (max-width: 1100px){
-    .text{
-        display:flex;
-    }
-    .text p{
-        display: none;
-    }
-    .text2{
-        display:flex;
-    }
-    .text2 p{
-        display: none;
-    }
-    .text3{
-        display:flex;
-    }
-    .text3 p{
-        display: none;
-    }
-    .text4{
-        display:flex;
-    }
-    .text4 p{
-        display: none;
-    }
-}
-
-/* --------FOOTER-------- */
 
 footer
 {
