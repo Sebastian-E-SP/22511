@@ -375,6 +375,46 @@ iframe #atari {
     margin: 10px;
     padding: 5px;
 } 
+textarea::placeholder{
+    text-align: center;
+    line-height: 60px;
+}
+
+[type=text]{
+    background-color: #f6f6f6;
+    border: none;
+    color: #0d0d0d;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    width: 100%;
+    border-radius: 5px 5px 5px 5px;
+}
+
+[type=button]{
+    width: 50%;
+    border: none;
+    background-color: #f6f6f6;
+    padding: 20px;
+    color: #0d0d0d;
+    font-size: 13px;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+[type=button]:hover{
+    background-color:#ffff66;
+}
+
+[type=button]:active{
+    -moz-transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -o-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+}
 
 .present {
     display: flex;
