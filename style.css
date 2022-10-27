@@ -2,7 +2,7 @@
 /* Universal Selectors */
 @font-face {
     font-family: 'Arcade';
-    src: url('ARCADE_N.TTF') format('truetype');
+    src: url('font/ARCADE_N.TTF') format('truetype');
     font-style: normal;
     font-weight: normal;
 }
@@ -325,9 +325,7 @@ span .show {
     
 
 }
-.card .cont {
-    margin: 30px;
-}
+
 iframe #atari {
     margin: auto;
 }
