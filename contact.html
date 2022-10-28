@@ -6,43 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="Img/favcoin.png"/>
-    <title>html/contact us</title>
+    <title>Contact</title>
     <meta name="description" content="Juegos Arcade en Stream, proyecto de codo a codo, comision 22511 (G-8)">
     <script src="https://kit.fontawesome.com/70dc13288a.js" crossorigin="anonymous"></script>
     <script defer src="main.js"></script>
 </head>
 <body>
+
     <!--Navbar-->
 
-    <nav>
-        <div class="container">
-           <a href="index.html"><h3><img class="icon" src="img/coin.png" width="22px" height="20px">Insert Coin</h3></a>
-
-            <div class = "menu">
-                <a href="html/about.html">html/about Us</a>
-                <a href="html/games.html">html/games</a>
-                <a href="html/contact.html">html/contact us</a>
-                <a href="html/help.html">html/help</a>
-            </div>
-
-            <button class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
+    <div class="navbar">
+        <a href="index.html" class="iactive coin">
+        <img src="img/coin.png" width="22" height="20" alt="insercoin">
+        <h3>Insert Coin</h3></a>
+    <div class="menu" id="menu">
+        <a href="games.html">GAMES</a>
+        <a href="about.html">ABOUT</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="help.html">HELP</a>
+    </div>
+    <a class="icon" onclick="toggle()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <script>
+    function toggle() { var menu = document.getElementById("menu");
+    if (menu.className === "menu") {
+        menu.className += " responsive";
+      } else {
+        menu.className = "menu";}
+    }
+    </script>
+    
 
     <!--Header-->
     <div class="letter">
         <div class="present">
             <h3>Take the game to another level</h3>
         </div>
-    <div class="html/contact">
+    <div class="contact">
         <h3>Get in Touch</h3>
         <div class="alert">Your message has been sent</div>
         <form action="https://formspree.io/f/mvoywgla"
-        method="POST" id="html/contactForm">
+        method="POST" id="contactForm">
           <p>
             <label for="name">First Name</label>
             <input type="text" id="name" name="firstname" placeholder="Your name.." required>
@@ -57,9 +63,9 @@
           </p>
           <p>
             <label>Message</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:50px"></textarea>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:80px"></textarea>
 
-            <button class="ctc"><input type="submit" value="Submit"></button>
+            <button type="submit" value="Submit" class="ctc"><p>Submit</p></button>
             </form>
         </div>
     </div>
@@ -70,13 +76,11 @@
     <!--Footer-->
 
     <footer class="pie-pagina">
-        <div class ="grupo-1">
+        <div class ="grupo">
             <div class = "box">
-                <figure>
-                    <a href=""><img src="img/logo.png"></a>
-                </figure>
+                    <a href="index.html"><img src="img/logo.png" alt="coin"></a>
             </div>   
-            <div class = "box">
+            <div class ="box">
                 <h2>Sobre nosotros</h2>
                 <p>En inster coin podras comprar los ultimos <br> 
                     videojuegos al mejor precioy con ofertas <br>
@@ -89,15 +93,15 @@
             <div class="box">
                 <h2>Encuentranos en</h2>
                 <div class="red-social">
-                    <a href="http://" class="fa fa-facebook"></a>
-                    <a href="http://" class="fa fa-instagram"></a>
-                    <a href="http://" class="fa fa-twitter"></a>
-                    <a href="http://" class="fa fa-youtube"></a> 
+                    <a href="https://www.facebook.com/https://www.facebook.com" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+                    <a href="https://twitter.com" class="fa fa-twitter"></a>
+                    <a href="https://www.youtube.com/" class="fa fa-youtube"></a> 
                 </div>
             </div>
-        </div>
-        <div class="grupo-2">
+            <div class="box s">
             <small>&copy; 2022 <b>Insert Coin</b> - Todos Los Derechos Reservados</small>
+            </div>
         </div>
     </footer>
     <script src="main.js"></script>

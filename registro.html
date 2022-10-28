@@ -11,24 +11,31 @@
     <title>Registro</title>
 </head>
 <body>
-    <nav>
-        <div class="container">
-           <a href="index.html"><h3><img class="icon" src="img/coin.png" width="22px" height="20px">Insert Coin</h3></a>
+    <!--Navbar-->
 
-            <div class = "menu">
-                <a href="html/about.html">html/about Us</a>
-                <a href="html/games.html">html/games</a>
-                <a href="html/contact.html">html/contact us</a>
-                <a href="html/help.html">html/help</a>
-            </div>
-
-            <button class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
+    <div class="navbar">
+        <a href="index.html" class="iactive coin">
+        <img src="img/coin.png" width="22" height="20" alt="insercoin">
+        <h3>Insert Coin</h3></a>
+    <div class="menu" id="menu">
+        <a href="games.html">GAMES</a>
+        <a href="about.html">ABOUT</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="help.html">HELP</a>
+    </div>
+    <a class="icon" onclick="toggle()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <script>
+    function toggle() { var menu = document.getElementById("menu");
+    if (menu.className === "menu") {
+        menu.className += " responsive";
+      } else {
+        menu.className = "menu";}
+    }
+    </script>
+    
 
     <section class="main">
     
@@ -86,25 +93,14 @@
 
     </section>
 
-
-
-
-   
-    
-
-
-
-
- <footer class="pie-pagina">
-        <div class ="grupo-1">
+    <footer class="pie-pagina">
+        <div class ="grupo">
             <div class = "box">
-                <figure>
-                    <a href=""><img src="Img/logo.png"></a>
-                </figure>
+                    <a href="index.html"><img src="img/logo.png" alt="coin"></a>
             </div>   
-            <div class = "box">
+            <div class ="box">
                 <h2>Sobre nosotros</h2>
-                <p>En Insert coin podras comprar los ultimos <br> 
+                <p>En inster coin podras comprar los ultimos <br> 
                     videojuegos al mejor precioy con ofertas <br>
                     cada semana, ademas encontraras noticias <br>
                     del mundo de los videojuegos.<br><br>
@@ -115,15 +111,15 @@
             <div class="box">
                 <h2>Encuentranos en</h2>
                 <div class="red-social">
-                    <a href="http://www.facebook.com" class="fa fa-facebook"></a>
-                    <a href="http://www.instagram.com" class="fa fa-instagram"></a>
-                    <a href="http://www.twitter.com" class="fa fa-twitter"></a>
-                    <a href="http://www.youtube.com" class="fa fa-youtube"></a> 
+                    <a href="https://www.facebook.com/https://www.facebook.com" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+                    <a href="https://twitter.com" class="fa fa-twitter"></a>
+                    <a href="https://www.youtube.com/" class="fa fa-youtube"></a> 
                 </div>
             </div>
-        </div>
-        <div class="grupo-2">
+            <div class="box s">
             <small>&copy; 2022 <b>Insert Coin</b> - Todos Los Derechos Reservados</small>
+            </div>
         </div>
     </footer>
     <script src="main.js"></script>
