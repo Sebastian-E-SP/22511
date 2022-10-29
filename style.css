@@ -409,6 +409,94 @@ button {
     font-size: 18px;
 }
 
+/* Registro */
+
+.main {
+    height: auto;
+    padding: 50px;
+    top: 100px;
+}
+
+
+/* Games */
+
+    .games-head {
+        background-image: url(/img/gamesbg.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 90vh;
+        position: relative;
+        filter:  blur(8px);
+        -webkit-filter: blur(8px);
+         transition: filter 3s 3s;
+        
+    }
+    .gtext {
+        position: absolute;
+        top: 30%;
+        left: 15%;
+        -webkit-animation: 3s 3s slide-left  cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	    animation: 3s 3s slide-left  cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        text-shadow: 3px 3px 3px black;
+    }
+    .gtext h2 {
+        font-size: 45px;
+        padding: 10px;
+        margin: 10px;
+        color: #fff;
+    }
+    .gtext h3 {
+        font-size: 38px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .gcont {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        gap: 10px;
+        padding: 15px;
+        margin: 40px auto;
+        width: 100%;
+        min-height: max-content;
+        justify-content: center;
+    }
+    .gcard {
+        position: relative;
+        border: 1px solid black;
+        border-radius: 15px;
+        background-color: #fff;
+        min-width: 300px;
+        max-width: 650px;
+        min-height: 300px;
+        max-height: 500px;
+        margin: 10px;
+        padding: 10px;
+
+    }
+    .gcard img {
+        position: absolute;
+        border-radius: 6px;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+    .gdesc {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 25%;
+        background-color: #242424b9;
+        color: #fff;
+        text-align: center;
+    }
+
+    
 
 /* Footer */
 
@@ -966,4 +1054,25 @@ padding-left: 25px;
         color: #3bd80d;
     }
   }
+  @-webkit-keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
+  @keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
+  
   
