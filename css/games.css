@@ -107,11 +107,18 @@ h3 {
     width: 100%;
     height: 90vh;
     position: relative;
-    filter:  blur(8px);
-    -webkit-filter: blur(8px);
-     transition: filter 3s 3s;
+    filter:  blur(0px);
+    -webkit-filter: blur(0px);
     
 }
+.games-head{
+    filter:  blur(8px);
+    -webkit-filter: blur(8px);
+     transition: 3s 1s;
+     
+}
+
+
 .gtext {
     position: absolute;
     top: 30%;
@@ -316,8 +323,8 @@ footer
               transform: translateX(0);
     }
     100% {
-      -webkit-transform: translateX(-100px);
-              transform: translateX(-100px);
+      -webkit-transform: translateX(-50px);
+              transform: translateX(-50px);
     }
   }
   @keyframes slide-left {
@@ -326,7 +333,7 @@ footer
               transform: translateX(0);
     }
     100% {
-      -webkit-transform: translateX(-100px);
-              transform: translateX(-100px);
+      -webkit-transform: translateX(-50px);
+              transform: translateX(-50px);
     }
   }
