@@ -13,52 +13,51 @@
 </head>
 <body>
     <!--Navbar-->
-
-    <div class="navbar">
-        <a href="index.html" class="iactive coin">
-        <img src="img/coin.png" width="22" height="20" alt="insercoin">
-        <h3>Insert Coin</h3></a>
-    <div class="menu" id="menu">
-        <a href="games.html">GAMES</a>
-        <a href="about_us.html">ABOUT</a>
-        <a href="contact.html">CONTACT</a>
-        <a href="registro.html">REGISTRO</a>
+    <div class="navbar" id="nav">
+        <a href="index.html" class="logo"><img src="img/coin.png" alt="insercoin">Insert<br>Coin</a>
         <a href="help.html">HELP</a>
-    </div>
-    <a class="icon" onclick="toggle()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
+        <a href="contact.html">CONTACT</a>
+        <a href="about.html">ABOUT</a>
+        <a href="games.html">GAMES</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunc()">
+        <i class="fa fa-bars"></i></a>
+</div>
+  
   <script>
-    function toggle() { var menu = document.getElementById("menu");
-    if (menu.className === "menu") {
+    function myFunc() { 
+        var menu = document.getElementById("nav");
+    if (menu.className === "navbar") {
         menu.className += " responsive";
       } else {
-        menu.className = "menu";}
+        menu.className = "navbar";}
     }
     </script>
-    
+
     <!--Header-->
+    
+
+    <div class="welcome">
     <video class="full" autoplay muted loop>
             <source src="img/tunell.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
-    </video> 
+    </video>
 
-    <div class="welcome">
-           
         <div class="title">
             <h1>Play Now!</h1>
+            <h2>See our</h2>
+            <div class="btn-game"><a href="games.html">Game Room</a></div>
         </div>
-        
+
         <div class="half">
             <ul>
-            <li><a href="registro.html">Register</a></li>
-            <li><a href="games.html">Games</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li><a href="registro.html">Register</a></li>
+            <li><a href="help.html">Help</a></li>
         </ul>
         </div>
     </div>
-   
+
+    <div class="btn-up"><a href="#"><i class="fa-regular fa-circle-up"></i></a></div>
 
     <!--Content-->
 
@@ -74,7 +73,7 @@
                 <div id="popup" class="popup" onclick="myFunction()"><i class="fa-solid fa-power-off"></i></div>
                 <span id="span">
                 <iframe id="atari" src="https://www.retrogames.cc/embed/7642-88-games.html" width="600" height="450" allowfullscreen></iframe>
-                </span>       
+                </span>
     <script>
     function myFunction() {
         var card = document.getElementById("card");
@@ -101,31 +100,31 @@
         </div>
     </div>
 
-    
+
     <!--Footer-->
 
     <footer class="pie-pagina">
         <div class ="grupo">
             <div class = "box">
                     <a href="index.html"><img src="img/logo.png" alt="coin"></a>
-            </div>   
+            </div>
             <div class ="box">
                 <h2>Sobre nosotros</h2>
-                <p>En inster coin podras comprar los ultimos <br> 
+                <p>En inster coin podras comprar los ultimos <br>
                     videojuegos al mejor precioy con ofertas <br>
                     cada semana, ademas encontraras noticias <br>
                     del mundo de los videojuegos.<br><br>
                     Nos encontramos en av.cabildo 2043<br>
                     ¡Te Esperamos!
                 </p>
-            </div>    
+            </div>
             <div class="box">
                 <h2>Encuentranos en</h2>
                 <div class="red-social">
                     <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
                     <a href="https://www.instagram.com" class="fa fa-instagram"></a>
                     <a href="https://twitter.com" class="fa fa-twitter"></a>
-                    <a href="https://www.youtube.com/" class="fa fa-youtube"></a> 
+                    <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
                 </div>
             </div>
             <div class="box s">

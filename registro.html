@@ -7,10 +7,7 @@
     <link rel="stylesheet" href="/css/registro.css">
     <link rel="icon" type="image/png" href="Img/favcoin.png"/>
     <script src="https://kit.fontawesome.com/1f19e4a1f9.js" crossorigin="anonymous"></script>
-    
     <title>Registro</title>
-</head>
-<body>
     <link rel="stylesheet" href="regnav.css">
     <link rel="icon" type="image/png" href="img/favcoin.png" />
     <script src="https://kit.fontawesome.com/1f19e4a1f9.js" crossorigin="anonymous"></script>
@@ -19,41 +16,28 @@
 
 <body>
 
-    <!-- ------NAVBAR------ -->
-    <nav>
-        <div class="container">
-            <a href="">
-                <h3><img class="icon" src="img/coin.png" width="22px" height="20px">Insert Coin</h3>
-            </a>
-            <div class="menu">
-                <a href="index.html" class="is-active">Home</a>
-                <a href="about_us.html" class="is-active">About Us</a>
-                <a href="Registro.html" class="is-active">Register</a>
-                <a href="help.html" class="is-active">Help</a>
-            </div>
-            <div class="icono-menu" id="icono-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-        <div class="cont-menu active" id="menu2">
-            <ul>
-                <a href="index.html">
-                    <li>Home</li>
-                </a>
-                <a href="about_us.html">
-                    <li>About us</li>
-                </a>
-                <a href="Registro.html">
-                    <li>Register</li>
-                </a>
-                <a href="help.html">
-                    <li>Help</li>
-                </a>
-            </ul>
-        </div>
-    </nav>
+     <!--Navbar-->
+
+    <!--Navbar-->
+    <div class="navbar" id="nav">
+        <a href="index.html" class="logo"><img src="img/coin.png" alt="insercoin">Insert<br>Coin</a>
+        <a href="help.html">HELP</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="about_us.html">ABOUT</a>
+        <a href="games.html">GAMES</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunc()">
+        <i class="fa fa-bars"></i></a>
+</div>
+  
+  <script>
+    function myFunc() { 
+        var menu = document.getElementById("nav");
+    if (menu.className === "navbar") {
+        menu.className += " responsive";
+      } else {
+        menu.className = "navbar";}
+    }
+    </script>
 
 <!--main-->
 
@@ -116,37 +100,37 @@
 </main>
 
 
-    <footer class="pie-pagina">
-        <div class="grupo-1">
-            <div class="box">
-                <div class="logo">
-                    <a href=""><img src="img/logo.png"></a>
-                </div>
-            </div>
-            <div class="box">
-                <h2>Sobre nosotros</h2>
-                <p>En insert coin podras comprar los ultimos <br>
-                    videojuegos al mejor precioy con ofertas <br>
-                    cada semana, ademas encontraras noticias <br>
-                    del mundo de los videojuegos.<br><br>
-                    Nos encontramos en av.cabildo 2043<br>
-                    ¡Te Esperamos!
-                </p>
-            </div>
-            <div class="box">
-                <h2>Encuentranos en</h2>
-                <div class="red-social">
-                    <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
-                    <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
-                    <a href="https://twitter.com/" class="fa fa-twitter"></a>
-                    <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
-                </div>
+<!--Footer-->
+
+<footer class="pie-pagina">
+    <div class ="grupo">
+        <div class = "box">
+                <a href="index.html"><img src="img/logo.png" alt="coin"></a>
+        </div>
+        <div class ="box">
+            <h2>Sobre nosotros</h2>
+            <p>En inster coin podras comprar los ultimos <br>
+                videojuegos al mejor precioy con ofertas <br>
+                cada semana, ademas encontraras noticias <br>
+                del mundo de los videojuegos.<br><br>
+                Nos encontramos en av.cabildo 2043<br>
+                ¡Te Esperamos!
+            </p>
+        </div>
+        <div class="box">
+            <h2>Encuentranos en</h2>
+            <div class="red-social">
+                <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+                <a href="https://twitter.com" class="fa fa-twitter"></a>
+                <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
             </div>
         </div>
-        <div class="grupo-2">
-            <small>&copy; 2022 <b>Insert Coin</b> - Todos Los Derechos Reservados</small>
+        <div class="box s">
+        <small>&copy; 2022 <b>Insert Coin</b> - Todos Los Derechos Reservados</small>
         </div>
-    </footer>
-    <script src="main.js"></script>
+    </div>
+</footer>
+<script src="main.js"></script>
 </body>
 </html>

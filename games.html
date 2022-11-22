@@ -13,31 +13,25 @@
 </head>
 <body>
     <!--Navbar-->
-
-    <div class="navbar">
-        <a href="index.html" class="iactive coin">
-        <img src="img/coin.png" width="22" height="20" alt="insercoin">
-        <h3>Insert Coin</h3></a>
-    <div class="menu" id="menu">
-      
-        <a href="about_us.html">ABOUT</a>
-        <a href="contact.html">CONTACT</a>
-        <a href="registro.html">REGISTRO</a>
+    <div class="navbar" id="nav">
+        <a href="index.html" class="logo"><img src="img/coin.png" alt="insercoin">Insert<br>Coin</a>
         <a href="help.html">HELP</a>
-    </div>
-    <a class="icon" onclick="toggle()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
+        <a href="contact.html">CONTACT</a>
+        <a href="about_us.html">ABOUT</a>
+        <a href="games.html">GAMES</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunc()">
+        <i class="fa fa-bars"></i></a>
+</div>
+  
   <script>
-    function toggle() { var menu = document.getElementById("menu");
-    if (menu.className === "menu") {
+    function myFunc() { 
+        var menu = document.getElementById("nav");
+    if (menu.className === "navbar") {
         menu.className += " responsive";
       } else {
-        menu.className = "menu";}
+        menu.className = "navbar";}
     }
     </script>
-    
 
     <!--Header-->
 

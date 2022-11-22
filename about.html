@@ -13,43 +13,27 @@
 </head>
 <body>
 
-    <!-- ------NAVBAR------ -->
-    <nav>
-        <div class="container">
-            <a href="index.html">
-                <h3><img class="icon" src="img/coin.png" width="22px" height="20px">Insert Coin</h3>
-            </a>
-            <div class="menu">
-                <a href="index.html" class="is-active">Home</a>
-                <a href="about_us.html" class="is-active">About Us</a>
-                <a href="registro.html" class="is-active">Register</a>
-                <a href="help.html" class="is-active">Help</a>
-            </div>
-            <div class="icono-menu" id="icono-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-        <div class="cont-menu active" id="menu2">
-            <ul>
-                <a href="index.html">
-                    <li>Home</li>
-                </a>
-                <a href="about_us.html">
-                    <li>About us</li>
-                </a>
-                <a href="registro.html">
-                    <li>Register</li>
-                </a>
-                <a href="help.html">
-                    <li>Help</li>
-                </a>
-            </ul>
-        </div>
-    </nav>
-
-
+    <!--Navbar-->
+    <div class="navbar" id="nav">
+        <a href="index.html" class="logo"><img src="img/coin.png" alt="insercoin">Insert<br>Coin</a>
+        <a href="help.html">HELP</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="about_us.html">ABOUT</a>
+        <a href="games.html">GAMES</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunc()">
+        <i class="fa fa-bars"></i></a>
+</div>
+  
+  <script>
+    function myFunc() { 
+        var menu = document.getElementById("nav");
+    if (menu.className === "navbar") {
+        menu.className += " responsive";
+      } else {
+        menu.className = "navbar";}
+    }
+    </script>
+    
     <!--Header-->
     <div class="about">
         <div class="main">

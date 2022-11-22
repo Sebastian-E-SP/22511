@@ -14,31 +14,26 @@
 <body>
 
     <!--Navbar-->
-
-    <div class="navbar">
-        <a href="index.html" class="iactive coin">
-        <img src="img/coin.png" width="22" height="20" alt="insercoin">
-        <h3>Insert Coin</h3></a>
-    <div class="menu" id="menu">
-        <a href="games.html">GAMES</a>
-        <a href="about_us.html">ABOUT</a>
-        <a href="registro.html">REGISTRO</a>
+    <div class="navbar" id="nav">
+        <a href="index.html" class="logo"><img src="img/coin.png" alt="insercoin">Insert<br>Coin</a>
         <a href="help.html">HELP</a>
-    </div>
-    <a class="icon" onclick="toggle()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
+        <a href="contact.html">CONTACT</a>
+        <a href="about_us.html">ABOUT</a>
+        <a href="games.html">GAMES</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunc()">
+        <i class="fa fa-bars"></i></a>
+</div>
+  
   <script>
-    function toggle() { var menu = document.getElementById("menu");
-    if (menu.className === "menu") {
+    function myFunc() { 
+        var menu = document.getElementById("nav");
+    if (menu.className === "navbar") {
         menu.className += " responsive";
       } else {
-        menu.className = "menu";}
+        menu.className = "navbar";}
     }
     </script>
     
-
     <!--Header-->
     <div class="letter">
         <div class="present">
@@ -50,12 +45,12 @@
         <form action="https://formspree.io/f/mvoywgla"
         method="POST" id="contactForm">
           <p>
-            <label for="name">First Name</label>
+            <label for="name">Name</label>
             <input type="text" id="name" name="firstname" placeholder="Your name.." required>
           </p>
           <p>
-            <label for="company">Company</label>
-            <input type="text" name="company" id="company" placeholder="Your company..">
+            <label for="User">User Name</label>
+            <input type="text" name="User" id="User" placeholder="Choice a user id..">
           </p>
           <p>
             <label>Email Address</label>
@@ -77,24 +72,24 @@
         <div class ="grupo">
             <div class = "box">
                     <a href="index.html"><img src="img/logo.png" alt="coin"></a>
-            </div>   
+            </div>
             <div class ="box">
                 <h2>Sobre nosotros</h2>
-                <p>En inster coin podras comprar los ultimos <br> 
+                <p>En inster coin podras comprar los ultimos <br>
                     videojuegos al mejor precioy con ofertas <br>
                     cada semana, ademas encontraras noticias <br>
                     del mundo de los videojuegos.<br><br>
                     Nos encontramos en av.cabildo 2043<br>
                     ¡Te Esperamos!
                 </p>
-            </div>    
+            </div>
             <div class="box">
                 <h2>Encuentranos en</h2>
                 <div class="red-social">
-                    <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+                    <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
                     <a href="https://www.instagram.com" class="fa fa-instagram"></a>
                     <a href="https://twitter.com" class="fa fa-twitter"></a>
-                    <a href="https://www.youtube.com/" class="fa fa-youtube"></a> 
+                    <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
                 </div>
             </div>
             <div class="box s">
@@ -103,6 +98,5 @@
         </div>
     </footer>
     <script src="main.js"></script>
-    
 </body>
 </html>

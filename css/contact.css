@@ -160,7 +160,7 @@ textarea::placeholder{
     line-height: 5;
 }
 
-[type=text]{
+[type=text], [type=email]{
     background-color: #f6f6f6;
     border: none;
     color: #0d0d0d;
