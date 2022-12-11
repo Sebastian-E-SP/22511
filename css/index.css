@@ -1,26 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap');
+
 /* Universal Selectors */
+
 @font-face {
     font-family: 'Arcade';
     src: url('/font/ARCADE_N.TTF') format('truetype');
     font-style: normal;
     font-weight: normal;
 }
+* {box-sizing: border-box;}
 
-*{box-sizing: border-box;}
-
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #242424;
-    color: #fff;
-    font-family: 'Arcade';
-
-}
 html {
     scroll-behavior: smooth;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #242424;
+    color: #fff;
+    font-family: 'Arcade';
+}
 a, ul, li {
 
     list-style: none;
@@ -42,32 +43,48 @@ h6{font-size: 0.75em;}
     background-color: #2D2D2D;
     border-bottom: 3px ridge rgb(130, 130, 130);
     border-radius: 6px;
-    padding: 5px auto; 
+    padding: 5px;
+    width: 100%;
+    height: auto;
 }
 
 .logo {
+    position: relative;
+    overflow: hidden;
     float: left;
     display: flex;
     align-items: center;
-    transition: 0.8s ease-in-out;
     font-size: 20px;
-    padding: 10px 0px 10px 50px;
-
+    margin: 10px 0px 10px 50px;
+    transition: 0.6s 0.3s ease-in-out;
+    text-shadow: rgba(240, 46, 170, 0.4) 2px 2px, rgba(240, 46, 170, 0.3) 4px 4px, rgba(240, 46, 170, 0.2) 6px 6px, rgba(240, 46, 170, 0.1) 8px 8px, rgba(240, 46, 170, 0.05) 10px 10px;
+}
+.logo:hover {
+    text-shadow: rgba(240, 46, 170, 0.4) 2px 2px, rgba(240, 46, 170, 0.3) 3px 3px, rgba(240, 46, 170, 0.2) 4px 4px, rgba(240, 46, 170, 0.1) 5px 5px, rgba(240, 46, 170, 0.05) 6px 6px;
+    transition: 0.5s ease-in-out;
 }
 
 .logo img {
-    width: 22px;
-    height: 20px;
+    margin-bottom: 28px;
+    width: 28px;
+    height: 26px;
     transition: 0.8s ease-in-out;
 }
 .logo:hover img {
-    width: 25px;
-    height: 25px;
-    transition: 0.5s ease-in-out;
+    width: 29px;
+    height: 28px;
+    transform: translateY(40px);
+    transition: 0.7s ease-in-out;
 }
 .navbar a:not(:first-child) {
     float: right;
     padding: 25px 15px;
+    transition: 0.6s 0.3s ease-in-out;
+    text-shadow: rgba(240, 46, 170, 0.4) 2px 2px, rgba(240, 46, 170, 0.3) 4px 4px, rgba(240, 46, 170, 0.2) 6px 6px, rgba(240, 46, 170, 0.1) 8px 8px, rgba(240, 46, 170, 0.05) 10px 10px;
+}
+.navbar a:not(:first-child):hover {
+    transition: 0.3s ease-in-out;
+    text-shadow: rgba(240, 46, 170, 0.4) -2px -2px, rgba(240, 46, 170, 0.3) -4px -4px, rgba(240, 46, 170, 0.2) -6px -6px, rgba(240, 46, 170, 0.1) -8px -8px, rgba(240, 46, 170, 0.05) -10px -10px;
 }
 .icon {
     display: none;
@@ -79,10 +96,8 @@ h6{font-size: 0.75em;}
     z-index: 1;
 }
 .btn-up i {
-
     font-size: 2em;
-    filter: invert(0.5);
- 
+    color: #fff;
 }
 
 /* Index */
@@ -100,13 +115,13 @@ h6{font-size: 0.75em;}
 
 
 video.full {
-    position: absolute;
+    position: fixed;
     top: 0;
-    min-width: none;
+    min-width: 100%;
     min-height: 100vh;
     z-index: -1;
-    filter: blur(5px);
-  -webkit-filter: blur(5px);
+    filter: blur(2px);
+  -webkit-filter: blur(2px);
 }
 
 .title {
@@ -129,7 +144,7 @@ video.full {
     width: fit-content;
     margin: auto;
     padding: 20px;
-    font-size: 20px;
+    font-size: 32px;
     border-radius: 6px;
     border: 3px ridge rgb(130, 130, 130);
     background-color: #000000;
@@ -175,7 +190,7 @@ video.full {
     position: relative;
     width: 100%;
     min-height: max-content;
-    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 10%, rgba(150,44,89,1) 60%, rgba(12,73,85,1) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0.3) 5%, rgba(0, 0, 0, 0.7) 10%, rgb(0, 0, 0) 20%, rgba(150,44,89,1) 50%, rgba(12,73,85,1) 100%);
     text-align: center;
 
 }
@@ -346,9 +361,16 @@ footer
     padding: 30px 0px;
 }
 
-
+footer .box {
+   max-width: 400px;
+   height: auto;
+}
+footer .box-s {
+    width: 100%;
+}
 .pie-pagina .grupo .box img{
     width: 260px;
+    margin: auto;
 }
 
 .pie-pagina .grupo .box h2{

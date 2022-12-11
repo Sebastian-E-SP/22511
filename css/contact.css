@@ -1,102 +1,102 @@
-@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap');
 /* Universal Selectors */
+
 @font-face {
     font-family: 'Arcade';
     src: url('/font/ARCADE_N.TTF') format('truetype');
     font-style: normal;
     font-weight: normal;
 }
+* {box-sizing: border-box;}
 
-* {
-    box-sizing: border-box;
-   }
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     margin: 0;
+    padding: 0;
+    line-height: 1.6;
     background-color: #242424;
+    color: #fff;
     font-family: 'Arcade';
-    
 }
-a {
+a, ul, li {
+    list-style: none;
     text-decoration: none;
     color: #fff;
 }
-ul {
-    list-style-type: none;
-}
 
-
-h3 {
-    color: white;
-    
-}
-
-
-.container {
-    max-width: 100%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.container a{
-    text-decoration: none;
-}
+h1{font-size: 2em;}
+h2{font-size: 1.75em;}
+h3{font-size: 1.5em;}
+h4{font-size: 1.25em;}
+h5{font-size: 1em;}
+h6{font-size: 0.75em;}
 
   /* Navbar */
 
-  .navbar {
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-    padding: 16px 32px;
-    background-color: #242424;
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
-    border-bottom: 3px solid grey;
+.navbar {
     overflow: hidden;
-  }
-  .iactive {
+    background-color: #2D2D2D;
+    border-bottom: 3px ridge rgb(130, 130, 130);
+    border-radius: 6px;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+}
+
+.logo {
+    position: relative;
+    overflow: hidden;
+    float: left;
     display: flex;
     align-items: center;
-    transition: 0.8s ease-in-out;
+    font-size: 20px;
+    margin: 10px 0px 10px 50px;
+    transition: 0.6s 0.3s ease-in-out;
+    text-shadow: rgba(240, 46, 170, 0.4) 2px 2px, rgba(240, 46, 170, 0.3) 4px 4px, rgba(240, 46, 170, 0.2) 6px 6px, rgba(240, 46, 170, 0.1) 8px 8px, rgba(240, 46, 170, 0.05) 10px 10px;
+}
+.logo:hover {
+    text-shadow: rgba(240, 46, 170, 0.4) 2px 2px, rgba(240, 46, 170, 0.3) 3px 3px, rgba(240, 46, 170, 0.2) 4px 4px, rgba(240, 46, 170, 0.1) 5px 5px, rgba(240, 46, 170, 0.05) 6px 6px;
+    transition: 0.5s ease-in-out;
 }
 
-.iactive img {
+.logo img {
+    margin-bottom: 28px;
+    width: 28px;
+    height: 26px;
     transition: 0.8s ease-in-out;
 }
-
-.iactive:hover img {
-    width: 25px;
-    height: 25px;
-    transition: 0.5s ease-in-out;
-  }
-
-  .menu a {
-    color: #f2f2f2;
-    text-align: center;
-    padding: 10px;
-    font-size: 17px;
-    transition: 0.8s ease-in-out;
-  }
-
-  .navbar a:hover {
-    text-shadow: 3px 3px 3px red;
-    transform: perspective(10px);
-    transition: 0.5s ease-in-out;
-  }
-  
-  .navbar .icon {
+.logo:hover img {
+    width: 29px;
+    height: 28px;
+    transform: translateY(40px);
+    transition: 0.7s ease-in-out;
+}
+.navbar a:not(:first-child) {
+    float: right;
+    padding: 25px 15px;
+    transition: 0.6s 0.3s ease-in-out;
+    text-shadow: rgba(240, 46, 170, 0.4) 2px 2px, rgba(240, 46, 170, 0.3) 4px 4px, rgba(240, 46, 170, 0.2) 6px 6px, rgba(240, 46, 170, 0.1) 8px 8px, rgba(240, 46, 170, 0.05) 10px 10px;
+}
+.navbar a:not(:first-child):hover {
+    transition: 0.3s ease-in-out;
+    text-shadow: rgba(240, 46, 170, 0.4) -2px -2px, rgba(240, 46, 170, 0.3) -4px -4px, rgba(240, 46, 170, 0.2) -6px -6px, rgba(240, 46, 170, 0.1) -8px -8px, rgba(240, 46, 170, 0.05) -10px -10px;
+}
+.icon {
     display: none;
-    font-size: 30px;
-    transition: 0.5s ease-in-out;
-  }
-  
+}
+.btn-up {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;  
+    z-index: 1;
+}
+.btn-up i {
+    font-size: 2em;
+    color: #fff;
+}
+
 /* Contact */
 
 .letter {
@@ -231,15 +231,22 @@ footer
     width: 100%;
     max-width: 1860px;
     margin: auto;
-    
+
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
     padding: 30px 0px;
 }
 
-
+footer .box {
+   max-width: 400px;
+   height: auto;
+}
+footer .box-s {
+    width: 100%;
+}
 .pie-pagina .grupo .box img{
     width: 260px;
+    margin: auto;
 }
 
 .pie-pagina .grupo .box h2{
@@ -293,56 +300,56 @@ footer
 .box.s {
     color: #fff;
 }
+@media screen and (max-width: 760px){
 
-@media screen and (max-width: 780px) {
-  .navbar a:not(.coin, .icon) {
+  .navbar {
+      position: fixed;
+      z-index: 1;
+      width: 100%;
+  }
+
+  .navbar a:not(:first-child) {
       display: none;
   }
-  .navbar .icon {
-      grid-row: 1;
-      grid-column: 2;
-    float: right;
-    display: block;
+  .navbar.responsive {
+      position: fixed;
   }
-  .welcome {
-      text-align: center;
-      justify-content: center;
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
   }
-
-}
-
-@media screen and (max-width: 780px) {
-  .navbar {
-      display: grid;
-      grid-template-columns: auto auto;
-  }
-  .menu.responsive {
-      grid-column: 1/ span 2;
-      text-align: center;
-      justify-content: center;
-      
-  }
-
-  .menu.responsive a {
+  
+  .navbar.responsive a {
     float: none;
     display: block;
     text-align: center;
   }
-}
 
-
-
-@media screen and (max-width:800px){
-  .pie-pagina .grupo-1{
-      width: 90%;
-      grid-template-columns: repeat(3, 1fr);
-      grid-gap: 30px;
-      padding: 35px 0px;
+  .navbar.responsive a.logo {
+      margin: 0;
+      padding: 0;
   }
+  
+  .navbar.responsive a.logo img  {
+    margin: 0;
+    padding: 0;
 }
+  .navbar a.icon {
+      display: block;
+      float: right;
+      color: #fff;
+      padding: 20px 30px 20px 20px;
+      font-size: 1.5em;
+      transform: rotate(0deg);
+      transition: 0.5s ease-in-out;
+  }
+  .navbar.responsive a.icon {
+      transform: rotate(270deg);
+      transition: 0.5s ease-in-out;
+  }
 
-
-
+}
 
 
 
