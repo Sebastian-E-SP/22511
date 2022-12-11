@@ -100,9 +100,8 @@ h6{font-size: 0.75em;}
 /* Contact */
 
 .letter {
-    padding-top: 120px;
     width: 100%;
-    height: min-content;
+    min-height: min-content;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
